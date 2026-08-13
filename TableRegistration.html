@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Registration</title>
+    <h1><center>User Registration Page for form</center></h1>
+    <p><center>Fill out the form below to register:</center></p>
+</head>
+<body>
+    <center>
+    <form action="TableRegistration" method="get">
+        <table>
+            <tbody>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="username" placeholder="Enter your username" required></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><textarea name="address" rows="5" cols="20" placeholder="Enter your address" required></textarea></td>
+            </tr>
+            <tr>
+                <td>Male:</td>
+                <td><input type="radio" name="gender" value="Male" required></td>
+            </tr>
+            <tr>
+                <td>Female:</td>
+                <td><input type="radio" name="gender" value="Female" required></td>
+            </tr>
+            <tr>
+                <td>Other:</td>
+                <td><input type="radio" name="gender" value="Other" required></td>
+            </tr>
+            <tr>
+                <td>Python:</td>
+                <td><input type="checkbox" name="python" value="Python"></td>
+            </tr>
+            <tr>
+                <td>HTML:</td>
+                <td><input type="checkbox" name="HTML" value="HTML"></td>
+            </tr>
+            <tr>
+                <td>DA:</td>
+                <td><input type="checkbox" name="DA" value="DA"></td>
+            </tr>
+            <tr>
+                <td>DS:</td>
+                <td><input type="checkbox" name="DS" value="DS">
+            </tr>
+            <tr>
+                <td>Country:</td>
+                <td>
+                    <select name="Country">
+                        <option value="India" selected>India</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Germany</option>
+                    </select> <br> <br>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="submit" onclick="alert('Form submitted!')">Register</button></td><br>
+                <td><button type="reset" onclick="alert('Form reset!')">Reset</button></td> <br>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+    </center>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        table {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+            color: #fff;
+        }
+    </style>
+</body>
+</html>
